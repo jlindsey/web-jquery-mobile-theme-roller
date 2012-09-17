@@ -771,7 +771,7 @@ TR.initDialogs = function() {
 				if( theme_name && theme_name.indexOf(" ") == -1 ) {
 					
 					$.ajax({
-						url: "./zip.php",
+						url: "/zip",
 						type: "POST",
 						data: "ver=" + TR.version + "&theme_name=" + $( "input", this ).val() + "&file=" + encodeURIComponent(TR.styleBlock.text()),
 						dataType: "text",

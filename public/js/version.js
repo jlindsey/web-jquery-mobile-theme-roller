@@ -53,7 +53,7 @@ TR.travelTo = function( version, importing ) {
 
 TR.passTheme = function( version ) {
 	var form = $( '<form style="display: none" action="?\
-		ver=' + version + '" method="post"><input name="style" value="' + encodeURI( TR.styleBlock.text() ) + '" /></form>' );
+		ver=' + version + '" method="get"><input name="style" value="' + encodeURI( TR.styleBlock.text() ) + '" /></form>' );
 	$( "body" ).append( form );
 	form.submit();
 }

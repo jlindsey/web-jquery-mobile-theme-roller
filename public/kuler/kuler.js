@@ -131,7 +131,7 @@ $(function(){
 		var kuler = $( "#kuler #center-panel" );
 		
 		$.ajax({
-			url: "./kuler.php",
+			url: "/kuler",
 			//proper dataType would be xml but Chrome and Safari would not successfully call $(data) unless we used plain text
 			dataType: "text",
 			type: "post",
